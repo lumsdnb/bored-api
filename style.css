@@ -1,0 +1,12 @@
+body {
+  padding: 3rem;
+}
+
+.api-output {
+  display: flex;
+  flex-direction: column;
+}
+
+.api-output > * {
+  padding: 0.4rem;
+}
