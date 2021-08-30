@@ -10,3 +10,8 @@ body {
 .api-output > * {
   padding: 0.4rem;
 }
+
+button {
+  padding: 1rem;
+  font-size: 1.1rem;
+}

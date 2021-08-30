@@ -23,5 +23,5 @@ function updateDom(data) {
     console.log(data.link);
     domLink.src = data.link;
     domLink.textContent = 'read more';
-  }
+  } else domLink.textContent = '';
 }
