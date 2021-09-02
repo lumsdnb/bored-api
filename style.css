@@ -1,17 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700&display=swap');
 body {
+  font-family: 'Sansita', sans-serif;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .api-output {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #d4e6fb;
+  margin: 1rem;
+  position: absolute;
+  bottom: 10vh;
 }
 
 .api-output > * {
   padding: 0.4rem;
 }
 
+img {
+  width: 20rem;
+  z-index: 3;
+}
 button {
+  font-family: 'Sansita', sans-serif;
   padding: 1rem;
   font-size: 1.1rem;
+  border-radius: 4rem;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 4px 0px;
+  transition: all 20ms ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+.find-activity-button {
+  background-color: #7ce9b5;
+}
+.readmore-button {
+  background-color: #b87ce9;
+}
+
+.--hidden {
+  opacity: 0;
+  position: absolute;
+  transition: all 60ms ease-in-out;
+}
+
+/* ---------- loading spinner----------  */
+.loading-spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.loading-spinner:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #000;
+  border-color: #000 transparent #000 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
