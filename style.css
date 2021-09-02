@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,700&display=swap');
+
+html {
+  background-color: #d4e6fb;
+}
 body {
+  background-color: whitesmoke;
+  border-radius: 1rem;
   font-family: 'Sansita', sans-serif;
   padding: 3rem;
   display: flex;
@@ -7,6 +13,10 @@ body {
   max-width: 30rem;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .api-output {
@@ -16,7 +26,7 @@ body {
   border-radius: 0.5rem;
   background-color: #d4e6fb;
   margin: 1rem;
-  position: absolute;
+  /* position: absolute; */
   bottom: 10vh;
 }
 
@@ -36,6 +46,7 @@ button {
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 4px 0px;
   transition: all 20ms ease-in-out;
+  user-select: none;
 }
 button:hover {
   transform: scale(1.1);
@@ -52,6 +63,11 @@ button:hover {
   opacity: 0;
   position: absolute;
   transition: all 60ms ease-in-out;
+}
+
+.bored-bubble {
+  position: absolute;
+  top: 2rem;
 }
 
 /* ---------- loading spinner----------  */

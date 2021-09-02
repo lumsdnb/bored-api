@@ -9,7 +9,6 @@ const outputPanel = document.querySelector('.api-output');
 
 async function getRandomThing() {
   const ENDPOINT = 'https://www.boredapi.com/api/activity';
-  let isPending = true;
   pendingDom();
   const result = await fetch(ENDPOINT)
     .then((response) => response.json())
