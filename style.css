@@ -14,9 +14,9 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%;
+  top: 2rem
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
 .api-output {
