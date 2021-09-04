@@ -22,12 +22,10 @@ body {
 .api-output {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.5rem 0.2rem;
   border-radius: 0.5rem;
   background-color: #d4e6fb;
   margin: 1rem;
-  /* position: absolute; */
-  bottom: 10vh;
 }
 
 .api-output > * {
@@ -35,8 +33,11 @@ body {
 }
 
 img {
-  width: 20rem;
+  width: 10rem;
   z-index: 3;
+  position: relative;
+  top: 1.4rem;
+  pointer-events: none;
 }
 button {
   font-family: 'Sansita', sans-serif;
