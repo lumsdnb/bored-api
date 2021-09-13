@@ -45,3 +45,5 @@ function formatPrice(p) {
     return '$$';
   } else return '$$$';
 }
+
+module.exports = formatPrice;

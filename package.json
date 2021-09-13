@@ -1,0 +1,25 @@
+{
+  "name": "bored-api",
+  "version": "1.0.0",
+  "description": "just messing with the bored api to get some practise in",
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumsdnb/bored-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lumsdnb/bored-api/issues"
+  },
+  "homepage": "https://github.com/lumsdnb/bored-api#readme",
+  "devDependencies": {
+    "jest": "^27.2.0"
+  }
+}
